@@ -12,9 +12,9 @@ meta:
   _edit_last: '1'
   views: '2'
 author:
-  login: ajksunkang
-  email: ajksunkang@pku.edu.cn
-  display_name: ajksunkang
+  login: slayer
+  email: dongyado@gmail.com
+  display_name: slayer
 ---
 
 ###      武陵春
