@@ -8,7 +8,10 @@ author_footer: false
 
 ## 个人信息
 
-dongyado, 1990, ShenZhen
+sunkang, 1995, Peking University
+
+
+-------------------------------以下内容都不是我说的------------------------------------
 
 喜欢两句话：
 
