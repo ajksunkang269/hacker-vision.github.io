@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 酱油队长之第一篇博文
-date: 2017-08-20
+date: 2017-11-04
 categories:
 - tool
 tags: [转换器, 云跟帖，disqus]
@@ -12,9 +12,9 @@ meta:
   _edit_last: '1'
   views: '2'
 author:
-  login: slayer
-  email: dongyado@gmail.com
-  display_name: slayer
+  login: ajksunkang
+  email: ajksunkang@pku.edu.cn
+  display_name: ajksunkang
 ---
 
 ###      武陵春
