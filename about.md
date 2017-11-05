@@ -11,13 +11,18 @@ author_footer: false
 sunkang, 1995, Peking University
 
 
--------------------------------以下内容都不是我说的------------------------------------
-
 喜欢两句话：
 
-* 生命不止，折腾不息 
+* 八小时工作，八小时生活，八小时窝着
 
-* Just for fun -- by linus
+* 临渊羡鱼，不如退而结网
+
+
+Github:[https://github.com/Hacker-vision](https://github.com/Hacker-vision)
+
+邮箱：ajksunkang@pku.edu.cn
+
+-------------------------------以下内容与我无关------------------------------------
 
 ## 项目
 
