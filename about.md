@@ -18,7 +18,7 @@ sunkang, 1995, Peking University
 * 临渊羡鱼，不如退而结网
 
 
-Github:[https://github.com/Hacker-vision](https://github.com/Hacker-vision)
+Github：[https://github.com/Hacker-vision](https://github.com/Hacker-vision)
 
 邮箱：ajksunkang@pku.edu.cn
 
