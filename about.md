@@ -22,6 +22,8 @@ Github：[https://github.com/Hacker-vision](https://github.com/Hacker-vision)
 
 邮箱：ajksunkang@pku.edu.cn
 
+CSDN blog：[http://blog.csdn.net/u012717411](http://blog.csdn.net/u012717411)
+
 -------------------------------以下内容与我无关------------------------------------
 
 ## 项目
