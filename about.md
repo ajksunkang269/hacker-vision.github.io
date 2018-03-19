@@ -41,25 +41,22 @@ CSDN blog：[http://blog.csdn.net/u012717411](http://blog.csdn.net/u012717411)
 [friso@github]: https://github.com/lionsoul2014/friso
 
 [^_^]:
+    ## 项目
+    #### 1.ip2region
+    准确率99.9%的ip到地名的映射库，0.0x毫秒级查询,数据库文件大小只有1.5M, 提供了java, php, c, python， php扩展等查询客户端
 
-## 项目
+    * [ip2region@github][]
+    * [ip2region@osc][] 
 
-#### 1.ip2region
+    #### 2. Jcseg
 
-准确率99.9%的ip到地名的映射库，0.0x毫秒级查询,数据库文件大小只有1.5M, 提供了java, php, c, python， php扩展等查询客户端
+    Jcseg是基于mmseg算法的一个轻量级中文分词器
 
-* [ip2region@github][]
-* [ip2region@osc][] 
+    * [Jcseg@osc][] 
+    * [Jcseg@github][] 
 
-#### 2. Jcseg
+    #### 3. friso
 
-Jcseg是基于mmseg算法的一个轻量级中文分词器
+    friso是基于mmseg算法的一个轻量级中文分词器(基于C, 已支持php5,php7扩展)
 
-* [Jcseg@osc][] 
-* [Jcseg@github][] 
-
-#### 3. friso
-
-friso是基于mmseg算法的一个轻量级中文分词器(基于C, 已支持php5,php7扩展)
-
-* [friso@github][] 
+    * [friso@github][] 
