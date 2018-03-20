@@ -17,9 +17,9 @@ author:
   display_name: slayer
 ---
 
-### git 分布式版本管理工具，特点是git分支管理，与开源的远程仓库github配合使用。
+#### git 分布式版本管理工具，特点是git分支管理，与开源的远程仓库github配合使用。
 
-### Trick: 区分工作目录、暂存区域、本地仓库、远程仓库
+##### Trick: 区分工作目录、暂存区域、本地仓库、远程仓库
 
 
 - [ ] 基本命令
@@ -58,6 +58,6 @@ git merge new_branch        //合并 branch
 git branch -d new_bacnch    //删除 old branch
 ```
 
-trygit 15分钟教程：https://try.github.io
+trygit 15分钟教程：[https://try.github.io](https://try.github.io)
 
 
