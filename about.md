@@ -8,7 +8,7 @@ author_footer: false
 
 ## 个人信息
 
-sunkang, 1995, Peking University
+酱油队长
 
 
 喜欢两句话：
@@ -19,8 +19,6 @@ sunkang, 1995, Peking University
 
 
 Github：[https://github.com/Hacker-vision](https://github.com/Hacker-vision)
-
-邮箱：ajksunkang@pku.edu.cn
 
 CSDN blog：[http://blog.csdn.net/u012717411](http://blog.csdn.net/u012717411)
 
