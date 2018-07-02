@@ -1,6 +1,6 @@
 ---
 layout: page_with_comment
-title: 随拍
+title: 关于我
 permalink: /about/
 comments: false
 author_footer: false
