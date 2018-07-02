@@ -1,9 +1,9 @@
 ---
 layout: page_with_comment
-title: 关于我
+title: 随拍
 permalink: /about/
 comments: false
 author_footer: false
 ---
 
-1234
+![avatar](/images/header.jpg)
