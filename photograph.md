@@ -6,4 +6,4 @@ comments: false
 author_footer: false
 ---
 
-![avatar](/images/header.jpg)
+1234
