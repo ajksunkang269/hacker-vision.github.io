@@ -6,4 +6,4 @@ comments: false
 author_footer: false
 ---
 
-![Alt text](/images/header.jpg)
+![avatar](/images/header.jpg)
