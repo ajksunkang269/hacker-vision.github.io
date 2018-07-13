@@ -9,5 +9,5 @@ author_footer: false
 ![avatar](20180702-01.jpg)
 ![avatar](20180702-02.jpg)
 ![avatar](20180702-03.jpg)
-![avatar](20180702-04.jpg)
+
 ![avatar](/images/header.jpg)
