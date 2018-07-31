@@ -6,6 +6,6 @@ comments: false
 author_footer: false
 ---
 
-![avatar](20180702-01.jpg)
+![avatar](/images/20180702-01.jpg)
 
 ![avatar](/images/header.jpg)
