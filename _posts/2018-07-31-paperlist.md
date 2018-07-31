@@ -17,14 +17,17 @@ author:
   display_name: slayer
 ---
 体系结构四大顶会：ISCA、HPCA、MICRO、ASPLOS
----
 
-[2018.ISCA-45.3AP4.A Case for Richer Cross-layer Abstractions Bridging the Semantic Gap to Enhance Memory Optimization](https://try.github.io)
+
+[2018.ISCA-45.3AP4.A Case for Richer Cross-layer Abstractions Bridging the Semantic Gap to Enhance Memory Optimization](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - 2018一篇ISCA,设计XMem系统(atom模型+Interface接口)实现跨层抽象，弥补应用程序和体系结构/系统之间的语义Gap,在存储优化上得到很大性能提升.
-[1996.The Mips R10000 superscalar microprocessor]()
+
+[1996.The Mips R10000 superscalar microprocessor](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - 高体课的第1篇论文,MIPS R10000和Aplpha 21264堪称经典,后续RISC系列处理器都以此为原型.
-[1992.Alternative implementations of two-level adaptive branch prediction]()
+
+[1992.Alternative implementations of two-level adaptive branch prediction](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - 高体课的第2篇论文,两级自适应转移预测器{G,P}A{g,p/s},与当前主流的Gshare作比较.
-[1995.Optimal 2-bit branch predictors]()
+
+[1995.Optimal 2-bit branch predictors](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - 高体课的第3篇论文,最优(0,2)转移预测器,5248种自动机方案的推导.
 
