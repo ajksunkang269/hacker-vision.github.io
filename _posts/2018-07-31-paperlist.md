@@ -18,6 +18,13 @@ author:
 ---
 体系结构四大顶会：ISCA、HPCA、MICRO、ASPLOS
 
+[2002.CCured Type-Safe Retrofitting of Legacy Code](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+- CCured表示对C语言的治愈，把所有指针分成Safe|Sequence|Dynamic三类，在静态编译和运行时刻对指针所覆盖的内存区域做类型检查.
+
+[1998.StackGuard: Automatic Adaptive Detection and Prevention of Buffer-Overflow Attacks](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+- Buffer Overflow Attack(缓冲区溢出攻击)：对栈帧中的返回地址return address作写覆盖，使得返回的地址指向插入的攻击代码attack code.
+- StackGuard:1.插入Canary Word(金丝雀)在return时做检查2.MemGuard-对虚拟存储页写保护,禁止对返回地址写；前者是更高效，后者是更安全.
+
 [CHERI(1).2014.ISCA-41.S7BP1.The CHERI capability model Revisiting RISC in an age of risk](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - 剑桥大学的一套基于MIPS ISA+fat pointer存储安全系统，增加指令形成CHERI ISA，编译器使用LLVM，OS使用FreeBSD，处理器采用FPGA.
 - CHERI ISA和指令级模拟器QEMU-CHERI已在2016年发布.
