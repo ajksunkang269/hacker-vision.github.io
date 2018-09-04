@@ -19,7 +19,7 @@ author:
 体系结构四大顶会：ISCA、HPCA、MICRO、ASPLOS
 
 [2002.CCured Type-Safe Retrofitting of Legacy Code](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
-- CCured表示对C语言的治愈，把所有指针分成Safe|Sequence|Dynamic三类，在静态编译和运行时刻对指针所覆盖的内存区域做类型检查.
+- CCured表示对C语言的治愈，把所有指针分成Safe、Sequence、Dynamic三类，在静态编译和运行时刻对指针所覆盖的内存区域做类型检查.
 
 [1998.StackGuard: Automatic Adaptive Detection and Prevention of Buffer-Overflow Attacks](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - Buffer Overflow Attack(缓冲区溢出攻击)：对栈帧中的返回地址return address作写覆盖，使得返回的地址指向插入的攻击代码attack code.
