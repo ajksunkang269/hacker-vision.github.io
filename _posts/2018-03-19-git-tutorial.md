@@ -60,4 +60,14 @@ git branch -d new_bacnch    //删除 old branch
 
 trygit 15分钟教程：[https://try.github.io](https://try.github.io)
 
+---
+
+- [ ] apt-get安装和卸载命令
+```cpp
+apt-get update                          //更新源
+apt-get upgrade                         //升级软件
+apt-get install software_name           //安装软件
+apt-get --purge remove  software_name   //卸载软件及其配置
+apt-get autoremove software_name        //卸载软件及其依赖的安装包
+```
 
