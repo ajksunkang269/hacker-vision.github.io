@@ -61,6 +61,7 @@ git branch -d new_bacnch    //删除 old branch
 trygit 15分钟教程：[https://try.github.io](https://try.github.io)
 
 ---
+### Linux命令备忘录
 
 - [ ] apt-get安装和卸载命令
 ```cpp
