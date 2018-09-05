@@ -70,4 +70,17 @@ apt-get install software_name           //安装软件
 apt-get --purge remove  software_name   //卸载软件及其配置
 apt-get autoremove software_name        //卸载软件及其依赖的安装包
 ```
-
+- [ ] diff & patch
+diff制作补丁,patch打补丁.
+1.单个文件
+```cpp
+diff –uN  from-file  to-file  > to-file.patch  //创建补丁
+patch –p0 < to-file.patch                      //打补丁
+patch –RE –p0 < to-file.patch                  //清除补丁
+```
+2.多个文件
+```cpp
+diff –uNr  from-docu  to-docu > to-docu.patch  //创建补丁
+patch –p1 < to-docu.patch                      //打补丁
+patch –R –p1 <to-docu.patch                    //清除补丁
+```
