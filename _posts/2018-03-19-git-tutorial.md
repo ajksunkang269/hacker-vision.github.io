@@ -79,7 +79,6 @@ apt-get autoremove software_name        //卸载软件及其依赖的安装包
 ```
 - [ ] diff & patch
 
-diff制作补丁,patch打补丁.
 1.单个文件
 ```cpp
 diff –uN  from-file  to-file  > to-file.patch  //创建补丁
