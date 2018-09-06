@@ -23,6 +23,7 @@ author:
 ---
 
 - [ ] 基本命令
+
 ```cpp
 git init
 git add readme.txt
@@ -32,6 +33,7 @@ git remote add origin https://github.com/Hacker-vision/itchat-master.git //using
 git push -u origin master 
 ```
 - [ ] 可能用到的命令
+
 ```cpp
 git clone https://github.com/Hacker-vision/itchat-master.git [指定目录，缺省会创建与远程仓库名相同的目录名]
 git config --global user.name "ajksunkang"
@@ -39,17 +41,20 @@ git config --global user.email "ajksunkang@pku.edu.cn"
 git pull origin master //远程仓库有更新
 ```
 - [ ] 查看状态|日志
+
 ```cpp
 git status
 git log
 ```
 - [ ] 回退版本
+
 ```cpp
 git reset --hard HEAD^
 git reset --hard 3628164
 git reflog                 //回退后返回最新版本
 ```
 - [ ] 分支管理
+
 ```cpp
 git branch new_branch       //创建 new branch
 git checkout new_branch     //切换 branch
@@ -64,6 +69,7 @@ trygit 15分钟教程：[https://try.github.io](https://try.github.io)
 ### Linux命令备忘录
 
 - [ ] apt-get安装和卸载命令
+
 ```cpp
 apt-get update                          //更新源
 apt-get upgrade                         //升级软件
