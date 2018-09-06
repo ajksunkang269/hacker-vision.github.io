@@ -33,7 +33,7 @@ git push -u origin master
 ```
 - [ ] 可能用到的命令
 ```cpp
-git clone https://github.com/Hacker-vision/itchat-master.git
+git clone https://github.com/Hacker-vision/itchat-master.git [指定目录，缺省会创建与远程仓库名相同的目录名]
 git config --global user.name "ajksunkang"
 git config --global user.email "ajksunkang@pku.edu.cn"
 git pull origin master //远程仓库有更新
