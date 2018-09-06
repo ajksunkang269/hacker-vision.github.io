@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git常用命令
+title: Linux & git常用命令
 date: 2018-03-19
 categories:
 - tool
