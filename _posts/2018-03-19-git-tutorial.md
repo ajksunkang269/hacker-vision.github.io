@@ -74,6 +74,7 @@ trygit 15分钟教程：[https://try.github.io](https://try.github.io)
 apt-get update                          //更新源
 apt-get upgrade                         //升级软件
 apt-get install software_name           //安装软件
+apt --reinstall install software_name   //强制重新安装
 apt-get --purge remove  software_name   //卸载软件及其配置
 apt-get autoremove software_name        //卸载软件及其依赖的安装包
 ```
@@ -90,4 +91,12 @@ patch –RE –p0 < to-file.patch                  //清除补丁
 diff –uNr  from-docu  to-docu > to-docu.patch  //创建补丁
 patch –p1 < to-docu.patch                      //打补丁
 patch –R –p1 <to-docu.patch                    //清除补丁
+```
+
+- [ ] 查看服务器配置
+
+```cpp
+lscpu                          //处理器信息
+free -m                        //内存大小（MB）
+df -h                          //硬盘大小
 ```
