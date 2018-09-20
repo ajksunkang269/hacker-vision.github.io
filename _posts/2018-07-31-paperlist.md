@@ -16,7 +16,13 @@ author:
   email: dongyado@gmail.com
   display_name: slayer
 ---
+
 体系结构四大顶会：ISCA、HPCA、MICRO、ASPLOS
+计算机安全四大顶会：NDSS、SP、Sec、CCS
+
+[2018.ISCA-45.7BP2.Practical Memory Safety with REST](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+- REST(Random Embedded Secret Token)通过软硬件协同的机制在缓冲区的上下插入了随机Token（令牌），访问到Token报越界异常.
+- Cache Line增加了1 bit的Token标识位，在I1-D与Memory之间增加了一个Token比较器；ISA中通过修改X86指令增加了arm和disarm两条store指令.
 
 [2002.CCured Type-Safe Retrofitting of Legacy Code](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - CCured表示对C语言的治愈，把所有指针分成Safe、Sequence、Dynamic三类，在静态编译和运行时刻对指针所覆盖的内存区域做类型检查.
