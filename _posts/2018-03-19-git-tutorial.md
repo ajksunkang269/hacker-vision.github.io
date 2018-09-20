@@ -88,9 +88,10 @@ patch –RE –p0 < to-file.patch                  //清除补丁
 ```
 2.多个文件
 ```cpp
-diff –uNr  from-docu  to-docu > to-docu.patch  //创建补丁
-patch –p1 < to-docu.patch                      //打补丁
-patch –R –p1 <to-docu.patch                    //清除补丁
+diff –uNr  old_docu  new_docu >  myfirst.patch  //创建补丁
+cd old_docu/
+patch –p1 < ../myfirst.patch                    //打补丁
+patch –R –p1 < myfirst.patch                     //清除补丁
 ```
 
 - [ ] 查看服务器配置
