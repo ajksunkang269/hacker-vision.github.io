@@ -21,6 +21,12 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2018.ISCA-45.3AP3.SEESAW Using Superpages to Improve VIPT Caches](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+- 多核课第二周的paper2.改进VIPT的Index受限的问题，在4KB的base page引入2MB的超级页（大页），修改了TLB的Memory Hierarchy,TFT作为超级页映射表.
+
+[2018.HPCA-24.2BP2.SIPT Speculatively Indexed, Physically Tagged Caches](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+- 多核课第二周的paper1.改进VIPT的Index受限的问题，提出增加额外1-3bit index与tag一起做地址翻译，采用感知器做方向预测，类似于BTB的结构做值预测.
+
 [2018.ISCA-45.7BP2.Practical Memory Safety with REST](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - REST(Random Embedded Secret Token)通过软硬件协同的机制在缓冲区的上下插入了随机Token（令牌）.
 - Cache Line增加了1 bit的Token标识位，在I1-D与Memory之间增加了一个Token比较器；ISA中通过修改X86指令增加了arm和disarm两条store指令.
