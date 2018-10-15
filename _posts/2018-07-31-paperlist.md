@@ -23,12 +23,11 @@ author:
 
 [2009.soft bound Highly Compatibleand Complete Spatial Memory Safety for C](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
   
-&#160; &#160; &#160; &#160;SoftBound是一种朴素的BoundChecking实现技术，只在编译过程中的中间表示中插入代码，而不修改源程序.插入的代码包括1.每个指针创建base和bound2.每次使用指针进行访存操作之前做越界检查的语句,运行时刻的开销主要体现在访问查找表获取base和bound时间上.优点：能对所有的安全漏洞作全面检查，而且不改变源代码，兼容性好；缺点是：开发过程的压力都给了编译，运行时刻的开销也很大.
+&#160; &#160; &#160; &#160;SoftBound是一种朴素的BoundChecking实现技术，只在编译过程中的中间表示中插入代码，而不修改源程序.插入的代码包括1.每个指针创建base和bound 2.每次使用指针进行访存操作之前做越界检查的语句，运行时刻的开销主要体现在访问查找表获取base和bound时间上。优点：能对所有的安全漏洞作全面检查，而且不改变源代码，兼容性好；缺点是：开发过程的压力都给了编译，运行时刻的开销也很大。
 
 [2016.CC.Heap Bounds Protection with Low Fat Pointers](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
-- Low-fat pointer的思想解决heap的boundchecking问题.
-- 内存结构包括：全局变量0区+M个堆区+1个栈区
-- 给定指针p对应的内存地址值，p的高32位决定所在哪个堆区，每个堆区只能动态分配固定大小的size，base同时也要求对齐.
+
+&#160; &#160; &#160; &#160;Low-fat pointer的思想解决heap的boundchecking问题。内存结构包括：全局变量0区+M个堆区+1个栈区。编码方式：给定指针p对应的内存地址值，p的高32位决定所在哪个堆区，每个堆区只能动态分配固定大小的size，base同时也要求对齐.
 
 [2018.ISCA-45.3AP3.SEESAW Using Superpages to Improve VIPT Caches](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - 多核课第二周的paper2.改进VIPT的Index受限的问题，在4KB的base page引入2MB的超级页（大页），修改了TLB的Memory Hierarchy,TFT作为超级页映射表.
