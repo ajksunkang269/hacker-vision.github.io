@@ -23,7 +23,7 @@ author:
 
 [2009.soft bound Highly Compatibleand Complete Spatial Memory Safety for C](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
   
-  SoftBound是一种朴素的BoundChecking实现技术，只在编译过程中的中间表示中插入代码，而不修改源程序.插入的代码包括1.每个指针创建base和bound2.每次使用指针进行访存操作之前做越界检查的语句,运行时刻的开销主要体现在访问查找表获取base和bound时间上.优点：能对所有的安全漏洞作全面检查，而且不改变源代码，兼容性好；缺点是：开发过程的压力都给了编译，运行时刻的开销也很大.
+&#160; &#160; &#160; &#160;SoftBound是一种朴素的BoundChecking实现技术，只在编译过程中的中间表示中插入代码，而不修改源程序.插入的代码包括1.每个指针创建base和bound2.每次使用指针进行访存操作之前做越界检查的语句,运行时刻的开销主要体现在访问查找表获取base和bound时间上.优点：能对所有的安全漏洞作全面检查，而且不改变源代码，兼容性好；缺点是：开发过程的压力都给了编译，运行时刻的开销也很大.
 
 [2016.CC.Heap Bounds Protection with Low Fat Pointers](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - Low-fat pointer的思想解决heap的boundchecking问题.
