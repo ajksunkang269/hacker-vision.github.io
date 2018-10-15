@@ -21,6 +21,11 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2016.CC.Heap Bounds Protection with Low Fat Pointers](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+- Low-fat pointer的思想解决heap的boundchecking问题.
+- 内存结构包括：全局变量0区+M个堆区+1个栈区
+- 给定指针p对应的内存地址值，p的高32位决定所在哪个堆区，每个堆区只能动态分配固定大小的size，base同时也要求对齐.
+
 [2018.ISCA-45.3AP3.SEESAW Using Superpages to Improve VIPT Caches](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 - 多核课第二周的paper2.改进VIPT的Index受限的问题，在4KB的base page引入2MB的超级页（大页），修改了TLB的Memory Hierarchy,TFT作为超级页映射表.
 
