@@ -21,6 +21,11 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2017.SGXBOUNDS Memory Safety for Shielded Execution](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;SgxBound是为Intel SGX设计的一种BoundChecking策略，其设计思想是tag pointer + compact memory layout（类似于low-fat pointer），指针p的高32位存的是UpperBound，指针p指向的内存部分区域存的是LowerBound，源码地址[https://github.com/tudinfse/sgxbounds](https://github.com/tudinfse/sgxbounds)
+
+
 [2009.soft bound Highly Compatibleand Complete Spatial Memory Safety for C](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
   
 &#160; &#160; &#160; &#160;SoftBound是一种朴素的BoundChecking实现技术，只在编译过程中的中间表示中插入代码，而不修改源程序.插入的代码包括1.每个指针创建base和bound 2.每次使用指针进行访存操作之前做越界检查的语句，运行时刻的开销主要体现在访问查找表获取base和bound时间上。优点：能对所有的安全漏洞作全面检查，而且不改变源代码，兼容性好；缺点是：开发过程的压力都给了编译，运行时刻的开销也很大。
