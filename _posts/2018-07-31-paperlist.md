@@ -24,6 +24,7 @@ author:
 [2017.SGXBOUNDS Memory Safety for Shielded Execution](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;SgxBound是为Intel SGX设计的一种BoundChecking策略，其设计思想是tag pointer + compact memory layout（类似于low-fat pointer），指针p的高32位存的是UpperBound，指针p指向的内存部分区域存的是LowerBound.
+
 &#160; &#160; &#160; &#160;SgxBound源码地址[https://github.com/tudinfse/sgxbounds](https://github.com/tudinfse/sgxbounds)
 
 
