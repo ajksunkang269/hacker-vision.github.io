@@ -21,6 +21,10 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[Back to the Future Leveraging Belady’s Algorithm for Improved Cache Replacement](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;OPT算法是现实不可实现的，Back to the future这篇文章利用cache历史访问信息模拟最优LLC替换算法——OPT+Bypass，如果历史的行为是未来行为的很好的预测器的话，那么我们的算法就能够逼近OPT。
+
 [2017.SGXBOUNDS Memory Safety for Shielded Execution](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;SgxBound是为Intel SGX设计的一种BoundChecking策略，其设计思想是tag pointer + compact memory layout（类似于low-fat pointer），指针p的高32位存的是UpperBound，指针p指向的内存部分区域存的是LowerBound.
