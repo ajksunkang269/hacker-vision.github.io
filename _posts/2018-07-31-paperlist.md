@@ -21,9 +21,9 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
-[Back to the Future Leveraging Belady’s Algorithm for Improved Cache Replacement](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+[2016.ISCA.Back to the Future Leveraging Belady’s Algorithm for Improved Cache Replacement](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
-&#160; &#160; &#160; &#160;OPT算法是现实不可实现的，Back to the future这篇文章利用cache历史访问信息模拟最优LLC替换算法——OPT+Bypass，如果历史的行为是未来行为的很好的预测器的话，那么我们的算法就能够逼近OPT。
+&#160; &#160; &#160; &#160;OPT算法是现实不可实现的，Back to the future这篇文章利用cache历史访问信息模拟最优LLC替换算法——OPT+Bypass，如果历史的行为是未来行为的很好的预测器的话，那么我们的算法就能够逼近OPT。作者首先将替换策略抽象成一个二元分类的问题，给定一个cache line X，设计一套机制能够判断出X是cache友好的还是cache不友好的，对于cache不友好的，我们可以直接Bypass掉，对于cache友好的且在cache miss要发生替换的情况下，优先选择cache中相对来说不那么友好的cache line剔除掉，并插入新的X。由此需要解决2个问题：1.二元分类算法如何设计，输入一个cache line，输出它是cache友好的还是cache不友好的；2.友好度如何量化，方便我们在cache替换时优先剔除友好度最低的那个。文章设计了OPTgen+Hawkeye用来解决第一个问题，3-bit的RRIP用来解决第二个问题。OPT+Bypass算法的核心思想是重用区间内活性区间相互覆盖的区间个数是否超过cache容量，如果超过会被Bypass，对cache也是不友好的。
 
 [2017.SGXBOUNDS Memory Safety for Shielded Execution](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
