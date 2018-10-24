@@ -21,6 +21,10 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2018.ISCA.Rethinking belady's algorithm to accommodate prefetching](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;多核课LLC prefetch的一篇论文.
+
 [2018.SP.Protecting the stack with metadata policies and tagged hardware](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;组会作PRE的一篇论文，讲的是如何利用tag memory的思想作stack overflow的保护。栈帧是在运行时刻用来维护函数调用信息的一种数据结构，信息包括：传入的参数、返回地址、frame pointer、上下文寄存器、局部变量等，我们采用二元组(frame_id,object_id)来标识栈区中某个对象，以提供一种细粒度的保护机制。tag memory的核心思想是对每一条指令和每一个stack memory word都打tag，在运行时刻拿指令的tag和栈区的tag作为输入，交给Security Monitor根据制定的安全策略作检查，比如：if instr-tag == STORE-RED-X and mem-tag == RED-X then allowed and result-tag = RED-X。实现上tag利用shadow memory的思想实现，映射到某个内存区域，而安全策略policy则在硬件上用cache作缓存以减少检查开销。本文还提出的一种lazy tagging的优化策略，避免了在栈帧分配和释放flush栈区EMPTY_STACK的操作，不做写的检查、只做读的检查，允许写溢出，在保证了数据流的完整性的基础上极大减小了开销，但牺牲了存储安全的属性，性能开销从12%减少到3-4%.
