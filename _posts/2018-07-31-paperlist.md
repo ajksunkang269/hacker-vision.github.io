@@ -23,7 +23,7 @@ author:
 
 [2018.ISCA.Rethinking belady's algorithm to accommodate prefetching](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
-&#160; &#160; &#160; &#160;多核课LLC prefetch的一篇论文.
+&#160; &#160; &#160; &#160;多核课LLC prefetch的一篇论文.基本块实际上就是一种prefetch技术，当访问某个存储字节发生Miss时，会将64Bytes的基本块大小的内容全部放入cache中，以更好的发挥空间局部性。Hawkeye那篇文章讲述的只是如何设计cache 替换算法使得total miss最低，没有考虑prefetch的影响，实际上prefetch技术可以理解为额外、意料之外的Load操作，帮助CPU做了很多额外的替换操作，所以对后续的cache替换算法——不论是LRU还是OPT都会产生影响。本篇文章提出了OPT+prefetch的新算法Demand-MIN，每次cache Line替换时剔除掉prefetch最近的那个，如果cache中所有的基本块后续都没有prefetch，则按照OPT的算法做剔除。模仿Hawkeye的实现上，OPT扩充了重用区间的定义，节点也包括了每次petch X的时刻，同时对重用区间内活性区间相互覆盖的区间个数是否超过cache容量的评判标准也做了修改，而Predictor只是做了正常的扩充，RRIP没有修改，最终达到了很好的效果，与Hawkeye是一波人，18年的这一篇是在16年的基础上做的。
 
 [2018.SP.Protecting the stack with metadata policies and tagged hardware](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
