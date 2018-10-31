@@ -21,6 +21,11 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2018.HPCA-24.2BP1.KPart A Hybrid Cache Partitioning-Sharing Technique for Commodity Multicores](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;多核课LLC Partition的一篇论文.UCP划分策略是根据每一个core（或者应用）的Miss Cure曲线 miss ratio = f(cache capacity) 在总的cache容量一定下最小化总的核Miss Ratios的最优化策略，观察到这样一个现象：把2个对cache行为相似的cores作为一个划分，相同cache容量下总的Miss Ratios比单独划分的Miss Ratio1+Miss Ratio2之和要小，即Partition Miss Cure < Combined Miss Cure，其中Combined Miss Cure是两个Core简单的Miss Cure相加，基于这样一个有趣的观察我们可以设计一套算法优化UCP——将n个cores分成K个簇Clusters，再以Cluster为基本单元对总的容量作Cache划分，既能提高LLC访问性能，又能解决路划分路数不够分的问题。具体来说，将n个Cores两两组合，分别计算每一对的适配度，这里适配度用Partition Miss Cure和Combined Miss Cure的差来度量，distance = Combined Miss Cure - Partition Miss Cure,distance越大，说明两者的适配度越好，越应该放在一个Cluster里面，第一次迭代能够得到n-1个优化方案，将适配度最好的对看成一个整体继续参与下一次迭代寻找新一轮的最适对，经过N-1次迭代可以找到k=[1..N]的所有cluster组合方案，采用最简单最有效的方法遍历一遍k=1...N便可以找到最适合的K Clusters划分方案，和相应的Miss Cure曲线，这样，后续模仿UCP的算法求解Cachhe路划分策略即可。
+
+
 [2018.ISCA.Rethinking belady's algorithm to accommodate prefetching](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;多核课LLC prefetch的一篇论文.基本块实际上就是一种prefetch技术，当访问某个存储字节发生Miss时，会将64Bytes的基本块大小的内容全部放入cache中，以更好的发挥空间局部性。Hawkeye那篇文章讲述的只是如何设计cache 替换算法使得total miss最低，没有考虑prefetch的影响，实际上prefetch技术可以理解为额外、意料之外的Load操作，帮助CPU做了很多额外的替换操作，所以对后续的cache替换算法——不论是LRU还是OPT都会产生影响。本篇文章提出了OPT+prefetch的新算法Demand-MIN，每次cache Line替换时剔除掉prefetch最近的那个，如果cache中所有的基本块后续都没有prefetch，则按照OPT的算法做剔除。模仿Hawkeye的实现上，OPT扩充了重用区间的定义，节点也包括了每次petch X的时刻，同时对重用区间内活性区间相互覆盖的区间个数是否超过cache容量的评判标准也做了修改，而Predictor只是做了正常的扩充，RRIP没有修改，最终达到了很好的效果，与Hawkeye是一波人，18年的这一篇是在16年的基础上做的。
