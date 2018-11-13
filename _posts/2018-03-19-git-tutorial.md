@@ -104,6 +104,7 @@ free -m                        //内存大小（MB）
 df -h                          //硬盘大小
 ```
 - [ ] U盘挂载
+
 ```cpp
 lsblk                          //打印块设备
 mkdir /mnt/fat32/
@@ -112,11 +113,13 @@ sudo umount /mnt/fat32
 ```
 
 - [ ] 查看文件大小
+
 ```cpp
 du -h --max-depth=0 vmlinux    //查看某个文件or目录的字节大小
 ```
 
 - [ ] 软连接
+
 ```cpp
 ln -s 源目录或文件 新链接文件
 ```
