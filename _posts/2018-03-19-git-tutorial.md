@@ -29,16 +29,18 @@ git init
 git add readme.txt
 git commit -m "wrote a readme file"
 git remote add origin https://github.com/Hacker-vision/itchat-master.git //using https
-或git remote add origin git@github.com:Hacker-vision/leetcode.git //using ssh,可能会遇到publickey的问题
+git remote set-url origin https://github.com/Hacker-vision/itchat-master.git //using https
+或git remote add origin git@github.com:Hacker-vision/leetcode.git //using ssh,需要本地生成秘钥，在SSH服务器上注册,优点是不用每次都输入密码
 git push -u origin master 
 ```
 - [ ] 可能用到的命令
 
 ```cpp
-git clone https://github.com/Hacker-vision/itchat-master.git [指定目录，缺省会创建与远程仓库名相同的目录名]
+git clone --branch new_branch https://github.com/Hacker-vision/itchat-master.git new-diretory[指定目录，缺省会创建与远程仓库名相同的目录名]
 git config --global user.name "ajksunkang"
 git config --global user.email "ajksunkang@pku.edu.cn"
 git pull origin master //远程仓库有更新
+git clean -d -fx //暂存区域的文件修改全部删除
 ```
 - [ ] 查看状态|日志
 
@@ -100,4 +102,22 @@ patch –R –p1 < myfirst.patch                     //清除补丁
 lscpu                          //处理器信息
 free -m                        //内存大小（MB）
 df -h                          //硬盘大小
+```
+- [ ] U盘挂载
+```cpp
+lsblk                          //打印块设备
+mkdir /mnt/fat32/
+sudo mount /dev/sdb1 /mnt/fat32
+sudo umount /mnt/fat32
+```
+
+- [] 查看文件大小
+```cpp
+du -h --max-depth=0 vmlinux    //查看某个文件or目录的字节大小
+```
+
+- [] 软连接
+```cpp
+ln -s 源目录或文件 新链接文件
+
 ```
