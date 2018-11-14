@@ -21,6 +21,10 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2016.ISCA-43.5AP2.Bit-Plane Compression Transforming Data for Better Compression in Many-core Architectures](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;多核课上cache compression的一篇paper。为了增大cache的有效容量，在物理容量不变的情况下，需要对数据进行压缩。本文提出了一种Bit-Plane(位-平面)的cache压缩方法，能够达到整数集4.1:1的压缩比，压缩效果很明显。具体方法分为两步：第一步，Transform(转化)：以降低信息熵为目的，提出DBX（delta-bitplane-xor）转化方法，现将相邻的数据作差，然后转置，最后新相邻的数据作XOR操作，这样能够极大程度地开发数据的均匀性Homogeneity;第二步，Encode/Compression(压缩)：由于第一步转换开发了均匀性，产生了很多连续0的数据，降低了压缩端的压力，选用一种比较轻量级Lowweight的压缩器就可以获得理想的压缩比，本文采用的是以前诸多论文提到的ZBP-RLE+FPE的压缩方法.将Transform+Encode的方法结合起来，压缩效果非常明显。
+
 [2018.HPCA-24.2BP1.KPart A Hybrid Cache Partitioning-Sharing Technique for Commodity Multicores](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;多核课LLC Partition的一篇论文.UCP划分策略是根据每一个core（或者应用）的Miss Cure曲线 miss ratio = f(cache capacity) 在总的cache容量一定下最小化总的核Miss Ratios的最优化策略。观察到这样一个现象：把2个对cache访问行为和需求相似的cores作为一个划分，发现：相同cache容量下总的Miss Ratios比单独划分的Miss Ratio1+Miss Ratio2之和要小，即Partition Miss Cure < Combined Miss Cure，其中Combined Miss Cure是两个core的Miss Cure简单相加。基于这样一个有趣的观察我们可以设计一套算法优化UCP——将n个cores分成K个簇Clusters，再以Cluster为基本单元对总的容量作Cache划分，这样既能提高LLC访问性能，又能解决路划分路数不够分的问题。具体来说，将n个Cores两两组合，分别计算每一对的适配度，这里适配度用Partition Miss Cure和Combined Miss Cure的差来度量，distance = Combined Miss Cure - Partition Miss Cure,distance越大，说明两者的适配度越好，越应该放在一个Cluster里面；第一次迭代能够得到n-1个优化方案，将适配度最好的对看成一个整体继续参与下一次迭代寻找新一轮的最适对，经过N-1次迭代可以找到k=[1..N]的所有cluster组合方案；采用最简单最有效的方法遍历一遍k=1...N便可以找到最适合的K Clusters划分方案，和相应的Miss Cure曲线。这样，后续模仿UCP的算法求解Cachhe路划分策略即可。
