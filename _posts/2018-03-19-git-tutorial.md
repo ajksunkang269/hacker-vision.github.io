@@ -75,10 +75,12 @@ trygit 15分钟教程：[https://try.github.io](https://try.github.io)
 ```cpp
 apt-get update                          //更新源
 apt-get upgrade                         //升级软件
-apt-get install software_name           //安装软件
+apt-get install software_name           //安装软件（推荐）
+apt-get purge(--purge remove) software_name  //卸载软件及其配置文件，保留依赖的安装包（推荐）
+=====
 apt --reinstall install software_name   //强制重新安装
-apt-get --purge remove  software_name   //卸载软件及其配置
-apt-get autoremove software_name        //卸载软件及其依赖的安装包
+apt-get remove  software_name                //卸载软件但保留配置文件，保留依赖的安装包
+apt-get autoremove software_name        //卸载软件及其依赖的安装包，保留配置
 ```
 - [ ] diff & patch
 
