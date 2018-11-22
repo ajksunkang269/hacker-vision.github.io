@@ -18,12 +18,12 @@ author:
 ---
 
 体系结构四大顶会：ISCA、HPCA、MICRO、ASPLOS
-
+or
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
 [2018.CCS.A Robust and Efficient Defense against Use-after-Free Exploits via Concurrent Pointer Sweeping](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
-&#160; &#160; &#160; &#160; 组会PRE的一篇论文，主要内容是并发指针扫描算法解决Use-after-Free时间性安全问题。Use-after-Free指的是指针访问了已经释放的内存空间，这样的指针成为dangling pointer(悬垂指针迷途指针)。实现机制具体来说，利用空闲的核运行指针扫描的线程，迭代地扫描所有的活性指针，如果遇到悬垂指针，对它进行使失效，是它变为合法指针或者指向NULL。由于并发指针扫描(CPW)线程是在另一个核运行的，所以涉及到存储一致性（consistence同步）问题，指针扫描不能在保证free()之后立刻完成，为此之间仍然存在攻击窗口可以被攻击者用来做控制流攻击，本文提出了一个很好的解决方法——延迟释放，在CPW回合结束之后再进行free()操作，由此又会带来迷途指针传播的问题，作者又通过在q=p之后加入check解决。最后，通过重构64位指针内容，用50位保留动态执行的对象的Index,这样在发现UAF之后可以把对应的object以及在第几次free()的动态信息打印出来，OOT（object origin tracking）是一个incremental的工作。
+&#160; &#160; &#160; &#160; 组会PRE的一篇论文，主要内容是并发指针扫描算法解决Use-after-Free时间性安全问题。Use-after-Free指的是指针访问了已经释放的内存空间，这样的指针成为dangling pointer(悬垂指针or迷途指针)。实现机制具体来说，利用空闲的核运行指针扫描的线程，迭代地扫描所有的活性指针，如果遇到悬垂指针，对它进行使失效，是它变为合法指针或者指向NULL。由于并发指针扫描(CPW)线程是在另一个核运行的，所以涉及到存储一致性（consistence同步）问题，指针扫描不能在保证free()之后立刻完成，为此之间仍然存在攻击窗口可以被攻击者用来做控制流攻击，本文提出了一个很好的解决方法——延迟释放，在CPW回合结束之后再进行free()操作，由此又会带来迷途指针传播的问题，作者又通过在q=p之后加入check解决。最后，通过重构64位指针内容，用50位保留动态执行的对象的Index,这样在发现UAF之后可以把对应的object以及在第几次free()的动态信息打印出来，OOT（object origin tracking）是一个incremental的工作。
 
 [2016.ISCA-43.5AP2.Bit-Plane Compression Transforming Data for Better Compression in Many-core Architectures](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
