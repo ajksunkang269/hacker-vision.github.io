@@ -18,13 +18,13 @@ author:
 ---
 
 体系结构四大顶会：ISCA、HPCA、MICRO、ASPLOS
-or
+
 计算机安全四大顶会：NDSS、SP、Sec、CCS
+
 
 [2017.SOSP.Komodo: Using verification to disentangle secure-enclave hardware from software](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160; SOSP（symposium on operating system principles）操作系统原理大会的一篇paper。讲的是如何以ARM TrustZone为原型设计一套功能与Intel SGX相同的enclave执行环境，最最核心的是reference monitor的设计，就像科莫多龙保卫自己的领地一样，monitor管理和保护自己的enclave。区别于monitor在SGX中使用SGX指令实现，komodo采用的是一系列的Monitor call(SMC+SVC)进入ARM中的特权模式，实现OS-monitor、Monitor-Enclave之间的交互。简单理解，komodo最终实现了TrustZone中secure world+ SGX enclave的结合，在树莓派2上实现了该工作。 
-
 
 [2018.CCS.A Robust and Efficient Defense against Use-after-Free Exploits via Concurrent Pointer Sweeping](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
