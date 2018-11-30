@@ -126,3 +126,13 @@ du -h --max-depth=0 vmlinux    //查看某个文件or目录的字节大小
 ln -s 源目录或文件 新链接文件
 ```
 
+---
+### 我的vim配置（~/.vimrc）
+
+```cpp
+set nu
+" ColorScheme
+set background=dark
+```
+
+
