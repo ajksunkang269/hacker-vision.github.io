@@ -134,5 +134,9 @@ set nu
 " ColorScheme
 set background=dark
 ```
+### 常用vim操作
 
+```cpp
+shift+d  //删除光标到行末
+```
 
