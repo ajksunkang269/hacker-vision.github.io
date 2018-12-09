@@ -138,5 +138,6 @@ set background=dark
 
 ```cpp
 shift+d  //删除光标到行末
+shift+g  //调到文件最后一行
 ```
 
