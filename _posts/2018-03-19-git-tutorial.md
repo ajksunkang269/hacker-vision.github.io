@@ -126,6 +126,17 @@ du -h --max-depth=0 vmlinux    //查看某个文件or目录的字节大小
 ln -s 源目录或文件 新链接文件
 ```
 
+- [ ] 环境变量
+
+```cpp
+（1）vim /etc/profile     //所有用户生效（永久）
+（2）vim ~/.bash_profile
+source  ~/.bash_profile    //当前用户,不source的话下次重进此用户才生效（永久）
+（3）export PATH=$PATH:/some/path  //当前用户，退出终端失效
+
+```
+
+
 ---
 ### 我的vim配置（~/.vimrc）
 
