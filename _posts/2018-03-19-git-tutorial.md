@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux & git常用命令
+title: Linux + git + gdb重用命令
 date: 2018-03-19
 categories:
 - tool
@@ -150,5 +150,6 @@ set background=dark
 ```cpp
 shift+d  //删除光标到行末
 shift+g  //调到文件最后一行
+shift+a  //光标调到当前行的行末
 ```
 
