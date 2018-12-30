@@ -144,6 +144,8 @@ source  ~/.bash_profile    //当前用户,不source的话下次重进此用户�
 set nu
 " ColorScheme
 set background=dark
+"搜索逐字符高亮
+set hlsearch
 ```
 ### 常用vim操作
 
