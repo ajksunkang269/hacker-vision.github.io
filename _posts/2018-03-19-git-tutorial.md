@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linux + git + gdb重用命令
+title: Linux & git 常用命令
 date: 2018-03-19
 categories:
 - tool
@@ -141,10 +141,11 @@ source  ~/.bash_profile    //当前用户,不source的话下次重进此用户�
 ### 我的vim配置（~/.vimrc）
 
 ```cpp
+" 自动显示行号
 set nu
 " ColorScheme
 set background=dark
-"搜索逐字符高亮
+" 搜索逐字符高亮
 set hlsearch
 ```
 ### 常用vim操作
