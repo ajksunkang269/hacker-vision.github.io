@@ -22,6 +22,7 @@ author:
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
 [2018.ISCA-45.2BP2.A Hardware Accelerator for Tracing Garbage Collection](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
 &#160; &#160; &#160; &#160;Java、GO、C#等大多主流的编程语言都带有Garbage Collection机制，而C/C++都是通过手动malloc、free分配和释放资源。paper通过在真实的Rocket SOC跑Java benchmark发现：多核体系结构下在CPU中运行GC的线程是不合适的，在存在多核互扰和存储一致性问题的同时，占有38%的时间开销和25%的功耗。所以，把GC的机制设计成硬件单元，通过内核的driver与JVM打交道，可以合理的管理堆区的内存。具体实现：chisel module+linux driver+libhwgc.so.
 
 [2017.SOSP.Komodo: Using verification to disentangle secure-enclave hardware from software](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
