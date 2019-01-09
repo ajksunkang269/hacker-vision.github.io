@@ -8,14 +8,9 @@ author_footer: false
 
 ## 个人信息
 
-酱油队长
+酱油队长，深谙与国内外体系结构大牛之间的gap，先从打优质酱油做起。
 
-
-喜欢两句话：
-
-* 八小时工作，八小时生活，八小时窝着
-
-* 临渊羡鱼，不如退而结网
+本篇博客用作一些学习过程的记录，希望对自己、对别人有一些参考借鉴的意义。
 
 
 Github：[https://github.com/Hacker-vision](https://github.com/Hacker-vision)
