@@ -158,7 +158,6 @@ shift+a  //光标调到当前行的行末
 
 ### linux压缩解压缩命令大全
 
-```cpp
 .tar 
 解包：tar xvf FileName.tar
 打包：tar cvf FileName.tar DirName
@@ -221,4 +220,4 @@ _______________
 ———————————————
 .deb
 解包：ar p FileName.deb data.tar.gz | tar zxf -
-```
+
