@@ -21,6 +21,10 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2018.信息安全学报.Glibc 堆利用的若干方法](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;glibc是linux操作系统底层中标准C语言函数库，包括系统调用和以及各种IO的API，尤其是malloc、free的实现机制。由于glibc是开源，可以通过研究源码对glibc作攻击（用户程序千变万化，研究应用程序的攻击不具有普遍性）。本文主要内容有：（1）glibc的堆管理方式：chunck等数据结构、malloc、free、realloc的实现（2）glibc的攻击和防御：PIE（位置无关可执行）+ASLR 、 NX bit（不可执行位）+RELRO（重定位只读）。 读这篇文章主要是思考后期使用Minifat作glibc的加固。
+
 [2018.ISCA-45.2BP2.A Hardware Accelerator for Tracing Garbage Collection](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;Java、GO、C#等大多主流的编程语言都带有Garbage Collection机制，而C/C++都是通过手动malloc、free分配和释放资源。paper通过在真实的Rocket SOC跑Java benchmark发现：多核体系结构下在CPU中运行GC的线程是不合适的，在存在多核互扰和存储一致性问题的同时，占有38%的时间开销和25%的功耗。所以，把GC的机制设计成硬件单元，通过内核的driver与JVM打交道，可以合理的管理堆区的内存。具体实现：chisel module+linux driver+libhwgc.so.
