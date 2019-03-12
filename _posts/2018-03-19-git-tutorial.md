@@ -265,3 +265,12 @@ root ALL=(ALL) ALL
 sunkang ALL=(ALL) ALL
 保存退出，sunkang就有了root权限
 ```
+
+### U盘启动盘安装心得
+
+[1.window下制作ubuntu的启动盘->ultraISO](https://blog.csdn.net/zjx2014430/article/details/49303785)
+
+[2.window下制作win7/win10的启动盘(winPE)->大白菜](http://www.dabaicaipe.cn/upqdzz.html)
+
+[3.ubunutu下制作ubuntu的启动盘->dd](https://blog.csdn.net/wang4it/article/details/78998217)
+
