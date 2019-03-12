@@ -152,7 +152,11 @@ set hlsearch
 shift+d  //删除光标到行末
 shift+g  //调到文件最后一行
 shift+a  //光标调到当前行的行末
+:sp filenname     //分屏
+ctrl + ww         //分屏切换
 ```
+
+
 
 ### linux压缩解压缩命令大全
 ```
@@ -221,4 +225,40 @@ _______________
 ———————————————
 .deb
 解包：ar p FileName.deb data.tar.gz | tar zxf -
+```
+
+### 服务器网络配置+添加管理员
+
+```cpp
+ifconfig -a           //查看所有网卡设备，包括没启用、ifconfig显示不出来的
+ifconfig etho up      //启动网卡eth0
+ifconfig etho down    //关闭网卡eth0
+sudo vim /etc/network/interfaces //网络配置文件
+修改内容如下：
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+#The primary network interface
+auto enp2s0f0
+iface enp2s0f0 inet static
+        address 192.168.200.32
+        netmask 255.255.255.0
+        network 192.168.200.0
+        broadcast 192.168.200.255
+        gateway 192.168.200.2
+        dns-nameservers 162.105.129.27 #pku dns
+保存文件，重启网卡设备。   
+/etc/init.d/networking restart
+ifconfig  //查看新的网络设置
+```
+
+```cpp
+sudo adduser sunkang  //添加用户,会创建同名的用户主目录
+sudo vim /etc/sudoers  //新用户设置为管理员
+修改文件如下：
+# User privilege specification
+root ALL=(ALL) ALL
+sunkang ALL=(ALL) ALL
+保存退出，sunkang就有了root权限
 ```
