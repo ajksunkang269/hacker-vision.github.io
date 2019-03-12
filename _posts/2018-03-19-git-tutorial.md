@@ -230,10 +230,10 @@ _______________
 ### 服务器网络配置+添加管理员
 
 ```cpp
-ifconfig -a           //查看所有网卡设备，包括没启用、ifconfig显示不出来的
-ifconfig etho up      //启动网卡eth0
-ifconfig etho down    //关闭网卡eth0
-sudo vim /etc/network/interfaces //网络配置文件
+ifconfig -a           #查看所有网卡设备，包括没启用、ifconfig显示不出来的
+ifconfig etho up      #启动网卡eth0
+ifconfig etho down    #关闭网卡eth0
+sudo vim /etc/network/interfaces #网络配置文件
 修改内容如下：
 # The loopback network interface
 auto lo
@@ -254,8 +254,8 @@ ifconfig  //查看新的网络设置
 ```
 
 ```cpp
-sudo adduser sunkang  //添加用户,会创建同名的用户主目录
-sudo vim /etc/sudoers  //新用户设置为管理员
+sudo adduser sunkang  #添加用户,会创建同名的用户主目录
+sudo vim /etc/sudoers  #新用户设置为管理员
 修改文件如下：
 # User privilege specification
 root ALL=(ALL) ALL
