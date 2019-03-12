@@ -145,6 +145,9 @@ set nu
 set background=dark
 " 搜索逐字符高亮
 set hlsearch
+set incsearch
+"突出显示当前行
+set cursorline
 ```
 ### 常用vim操作
 
