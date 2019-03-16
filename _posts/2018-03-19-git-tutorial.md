@@ -170,6 +170,7 @@ ctrl + ww         //分屏切换
 ———————————————
 .xz
 解包: xz -d Filename.xz
+解包：unxz Filename.xz
 ———————————————
 .gz
 解压1：gunzip FileName.gz
