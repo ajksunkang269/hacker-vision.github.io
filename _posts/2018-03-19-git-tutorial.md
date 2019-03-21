@@ -290,4 +290,5 @@ sunkang ALL=(ALL) ALL
 [3.ubunutu下制作ubuntu的启动盘->dd(https://blog.csdn.net/wang4it/article/details/78998217)](https://blog.csdn.net/wang4it/article/details/78998217)
 
 格式化成ext4(U盘仅Linux识别):sudo mkfs.ext4 /dev/sdb4
+
 格式化成fat32(兼容性更好):sudo mkfs.fat /dev/sdb4 -I
