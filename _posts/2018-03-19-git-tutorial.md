@@ -103,13 +103,23 @@ lscpu                          //处理器信息
 free -m                        //内存大小（MB）
 df -h                          //硬盘大小
 ```
+- [ ] 查看内核版本和发行版本
+
+```cpp
+//查看内核版本（linux 4.19.23）
+uname -a
+cat /proc/version
+//查看发行版本（ubuntu、CentOS、Debian等）
+lsb_release -a
+cat /etc/issue
+```
+
 - [ ] U盘挂载
 
 ```cpp
 lsblk                          //打印块设备
-mkdir /mnt/fat32/
-sudo mount /dev/sdb1 /mnt/fat32
-sudo umount /mnt/fat32
+sudo mount /dev/sdb1 /mnt
+sudo umount /mnt 
 ```
 
 - [ ] 查看文件大小
@@ -279,3 +289,5 @@ sunkang ALL=(ALL) ALL
 
 [3.ubunutu下制作ubuntu的启动盘->dd(https://blog.csdn.net/wang4it/article/details/78998217)](https://blog.csdn.net/wang4it/article/details/78998217)
 
+格式化成ext4(U盘仅Linux识别):sudo mkfs.ext4 /dev/sdb4
+格式化成fat32(兼容性更好):sudo mkfs.fat /dev/sdb4 -I
