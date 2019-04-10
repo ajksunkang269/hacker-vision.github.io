@@ -21,6 +21,10 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2019.ASPLOS-24.4AP1.Architectural Support for Containment-based Security](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;硬件安全的一篇paper，涉及到微体系结构的设计。为了解决硬件安全，一种传统朴素的做法是克隆一个处理器在后台作冗余执行，比较冗余执行的结果与处理器运行结果是否一致，但是这种方法的overhead>100%。我们知道I/O等外围设备对处理器的安全是一个重大的威胁，Thus，如果把关注的视野局限在保证处理器与外围设备交互的结果安全，不考虑处理器内部是否受到攻击的情境下，我们可以设计一个简单的安全检查单元Sentry，使得Sentry<<Processor，通过在Sentry里重执行指令，比较Sentry执行结果与处理器发送的结果是否一致，一致的话再发送到I/O，从而完成复杂系统与IO交互结果的验证工作。 
+
 [2018.信息安全学报.Glibc 堆利用的若干方法](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;glibc是linux操作系统底层中标准C语言函数库，包括系统调用和以及各种IO的API，尤其是malloc、free的实现机制。由于glibc是开源，可以通过研究源码对glibc作攻击（用户程序千变万化，研究应用程序的攻击不具有普遍性）。本文主要内容有：（1）glibc的堆管理方式：chunck等数据结构、malloc、free、realloc的实现（2）glibc的攻击和防御：PIE（位置无关可执行）+ASLR 、 NX bit（不可执行位）+RELRO（重定位只读）。 读这篇文章主要是思考后期使用Minifat作glibc的加固。
