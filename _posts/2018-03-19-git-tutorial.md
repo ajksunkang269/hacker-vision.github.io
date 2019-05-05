@@ -49,6 +49,7 @@ git log
 - [ ] 回退版本
 
 ```cpp
+git checkout 3628164       //切换到某个commit id
 git reset --hard HEAD^
 git reset --hard 3628164
 git reflog                 //回退后返回最新版本
