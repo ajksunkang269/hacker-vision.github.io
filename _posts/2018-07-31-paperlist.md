@@ -21,6 +21,11 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2019.HPCA-25.4AP1.Conditional Speculation An Effective Approach to Safeguard Out-of-Order Execution Against Spectre Attacks](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;中科院信工所的一篇paper.讲的是如何进行微体系结构设计解决幽灵问题，对于推测式执行我们全关闭会极大的硬性处理器的性能，所以我们对推测式的指令范围作折中.通过引入“安全相关”的概念，对要进行推测式的指令作有条件的推测式——只有满足安全相关且Cache Miss且符合S-Pattern的指令阻塞执行(re-issue)，因为这些指令很可能会造成幽灵攻击把敏感信息反映到cache侧信道上，而其他指令正常的进行推测式执行。最终性能开销6.8%，而且能解决已知的幽灵问题（spectre v1.v4.prime），功耗开销小.
+
+
 [2019.ASPLOS-24.4AP1.Architectural Support for Containment-based Security](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;硬件安全的一篇paper，涉及到微体系结构的设计。为了解决硬件安全，一种传统朴素的做法是克隆一个处理器在后台作冗余执行，比较冗余执行的结果与处理器运行结果是否一致，但是这种方法的overhead>100%。我们知道I/O等外围设备对处理器的安全是一个重大的威胁，Thus，如果把关注的视野局限在保证处理器与外围设备交互的结果安全，不考虑处理器内部是否受到攻击的情境下，我们可以设计一个简单的安全检查单元Sentry，使得Sentry<<Processor，通过在Sentry里重执行指令，比较Sentry执行结果与处理器发送的结果是否一致，一致的话再发送到I/O，从而完成复杂系统与IO交互结果的验证工作。 
