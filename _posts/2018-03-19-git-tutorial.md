@@ -248,10 +248,14 @@ _______________
 
 ### 服务器网络配置+添加管理员
 
+注：虚拟机配置静态IP时要将网络设置成桥接，而NAT网络默认虚拟机是强制DHCP的.
+
 ```cpp
 ifconfig -a           #查看所有网卡设备，包括没启用、ifconfig显示不出来的
 ifconfig etho up      #启动网卡eth0
 ifconfig etho down    #关闭网卡eth0
+
+ubuntu宿主机配置静态IP
 sudo vim /etc/network/interfaces #网络配置文件
 修改内容如下：
 # The loopback network interface
