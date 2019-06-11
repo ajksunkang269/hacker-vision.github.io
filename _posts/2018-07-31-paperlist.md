@@ -21,6 +21,10 @@ author:
 
 计算机安全四大顶会：NDSS、SP、Sec、CCS
 
+[2019.SP.Using Safety Properties to Generate Vulnerability Patches](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
+
+&#160; &#160; &#160; &#160;
+
 [2019.HPCA-25.4AP1.Conditional Speculation An Effective Approach to Safeguard Out-of-Order Execution Against Spectre Attacks](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
 &#160; &#160; &#160; &#160;中科院信工所的一篇paper.讲的是如何进行微体系结构设计解决幽灵问题，对于推测式执行我们全关闭会极大的硬性处理器的性能，所以我们对推测式的指令范围作折中.通过引入“安全相关”的概念，对要进行推测式的指令作有条件的推测式——只有满足安全相关且Cache Miss且符合S-Pattern的指令阻塞执行(re-issue)，因为这些指令很可能会造成幽灵攻击把敏感信息反映到cache侧信道上，而其他指令正常的进行推测式执行。最终性能开销6.8%，而且能解决已知的幽灵问题（spectre v1.v4.prime），功耗开销小.
