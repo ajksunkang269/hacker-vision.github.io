@@ -23,7 +23,7 @@ author:
 
 [2019.SP.Using Safety Properties to Generate Vulnerability Patches](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
-&#160; &#160; &#160; &#160;
+&#160; &#160; &#160; &#160;本文的研究背景是软件工程领域中的APR(自动程序修复,automated program repair)，生成源码级别的patch.主要工作是LLVM KLEE的扩展，KLEE是基于LLVM的符号执行引擎，能够自动生成测试样例检测软件缺陷，需要将C/C++源代码编译成LLVM bitcode，本文在KLEE的基础上对LLVM  bitcode做了一层pass，计算出循环体中指针的访问范围，用于后续patch综合中和分配的范围作比较。本文主要用到编译中的符号执行技术（使用符号值来表示程序的输入数据，并将程序的运算过程逐指令或逐语句地转换为数学表达式，在CFG的基础上生成符号执行树，并为每一条路径建立一系列以输入数据为变量的符号表达式），最终采用了11个真实应用程序中42个CVE漏洞进行测试，跑通了其中的32个，没跑通的10个程序的原因是：Senx无法将所有的符号变量统一到一个函数体内，否则需要显著更改应用程序的代码，这显然超出了Senx的能力范围。
 
 [2019.HPCA-25.4AP1.Conditional Speculation An Effective Approach to Safeguard Out-of-Order Execution Against Spectre Attacks](https://github.com/Hacker-vision/Tutorials/tree/master/1-paper)
 
