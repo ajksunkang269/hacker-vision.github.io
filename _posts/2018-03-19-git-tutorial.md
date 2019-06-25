@@ -166,8 +166,9 @@ set cursorline
 shift+d  //删除光标到行末
 shift+g  //调到文件最后一行
 shift+a  //光标调到当前行的行末
-:sp filenname     //分屏
+:vsp filenname     //分屏
 ctrl + ww         //分屏切换
+:%s/sunkang//gn   //显示匹配个数
 ```
 
 ```cpp
