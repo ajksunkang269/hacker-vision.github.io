@@ -169,6 +169,7 @@ shift+a  //光标调到当前行的行末
 :vsp filenname     //分屏
 ctrl + ww         //分屏切换
 :%s/sunkang//gn   //显示匹配个数
+o                 //插入空行
 ```
 
 ```cpp
