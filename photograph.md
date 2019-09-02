@@ -1,6 +1,6 @@
 ---
 layout: page_with_comment
-title:  album
+title: Album
 permalink: /photograph/
 comments: false
 author_footer: false
