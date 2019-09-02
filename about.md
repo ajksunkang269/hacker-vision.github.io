@@ -6,13 +6,15 @@ comments: false
 author_footer: false
 ---
 
-## Education
+## 教育背景
 
-<font size=1>2017.09 - 2020.06</font>  Master, Computer Architecture, Peking University
+2017.09 - 2020.06  理学硕士，计算机体系结构，北京大学
 
-2013.09 - 2017.06  Bachelor, Internet of Things Engineering, Southwest Jiaotong University
+- 专业排名：3/11
 
+2013.09 - 2017.06  工学学士，物理网工程，西南交通大学
 
+- 专业排名：1/57
 
 ## Links
 
