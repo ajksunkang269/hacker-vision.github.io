@@ -9,7 +9,5 @@ author_footer: false
 * [ACM Digital Library](https://dl.acm.org/) - ACM论文集检索
 
 ## 博客 
-* [当我在扯淡][] - 王垠，《完全用Linux工作》，推广TeX、三次中途退学博士学位
+* [当我在扯淡][http://www.yinwang.org/] - 王垠，《完全用Linux工作》，推广TeX、三次中途退学博士学位
 
-[ACM Digital Library]：https://dl.acm.org/
-[当我在扯淡]：http://www.yinwang.org/
