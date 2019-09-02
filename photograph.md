@@ -7,6 +7,6 @@ author_footer: false
 ---
 
 <div align="center">
-<img src="/images/20180702-01.jpg" height="100px" width = "100px" alt="图片说明" ><img src="/images/header.jpg" height="300px" alt="图片说明" >
+<img src="/images/20180702-01.jpg" height="300px" width = "300px" alt="图片说明" ><img src="/images/header.jpg" height="300px" alt="图片说明" >
  
 </div>
