@@ -8,13 +8,13 @@ author_footer: false
 
 ## Education
 
-2017.09 - 2020.06  理学硕士，计算机体系结构，北京大学
+2017.09 - 2020.06  Master of Computer Architecture, Peking University
 
-- 专业排名：前30%，北京大学信息科学技术学院天创奖学金
+- Rank: top 30 percent. TianChuang Scholarship in EECS of Peking University(天创奖学金)
 
-2013.09 - 2017.06  工学学士，物理网工程，西南交通大学
+2013.09 - 2017.06  Bachelor of IOT Engineering, Southwest Jiaotong University
 
-- 专业排名：前2%，国家奖学金2次，唐立新优秀学生标兵，省级优秀毕业生
+- Rank：top 2 percent，National Scholarship（国家奖学金） × 2，Provincial Outstanding Graduate（省级优秀毕业生）.
 
 ## Links
 
