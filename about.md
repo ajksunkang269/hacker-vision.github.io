@@ -8,7 +8,7 @@ author_footer: false
 
 ## Education
 
-2017.09 - 2020.06  Master, Computer Architecture, Peking University
+<font size=1>2017.09 - 2020.06</font>  Master, Computer Architecture, Peking University
 
 2013.09 - 2017.06  Bachelor, Internet of Things Engineering, Southwest Jiaotong University
 
