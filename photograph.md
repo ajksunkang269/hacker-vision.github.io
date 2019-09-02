@@ -20,7 +20,7 @@ author_footer: false
 
 <table>
     <tr>
-        <td><center><img src="/images/20190902-01.jpg" height="100px" width = "150px" alt="图片说明">图一：Logo</center></td>
-        <td><center><img src="/images/20190902-02.jpg" height="100px" width = "150px" alt="图片说明">图一：Logo</center></td>
+        <td><center><img src="/images/20190902-01.jpg" >figure1.新中关华灯初上</center></td>
+        <td><center><img src="/images/20190902-02.jpg" >fugure2.后海夜景</center></td>
     </tr>
 </table>
