@@ -14,7 +14,7 @@ author_footer: false
 
 2013.09 - 2017.06  Bachelor of IOT Engineering, Southwest Jiaotong University
 
-- Rank：top 2 percent，National Scholarship × 2，Provincial Outstanding Graduate.
+- Rank：top 2 percent，National Scholarship × 2，The First Prize Scholarship × 3，Provincial Outstanding Graduate.
 
 ## Links
 
