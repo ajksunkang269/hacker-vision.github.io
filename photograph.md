@@ -15,5 +15,5 @@ author_footer: false
 
 
 <figure class="third">
-    <img src="/images/20190902-01.jpg" height="200px" width = "300px" alt="图片说明"><img src="/images/20190902-02.jpg" height="200px" width = "300px" alt="图片说明"><img src="/images/20190902-03.jpg" height="200px" width = "300px" alt="图片说明">
+    <img src="/images/20190902-01.jpg" height="100px" width = "150px" alt="图片说明"><img src="/images/20190902-02.jpg" height="100px" width = "150px" alt="图片说明"><img src="/images/20190902-03.jpg" height="100px" width = "150px" alt="图片说明">
 </figure>
