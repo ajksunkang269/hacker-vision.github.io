@@ -10,11 +10,7 @@ author_footer: false
 
 2017.09 - 2020.06  Master of Computer Architecture, Peking University
 
-- Rank: top 30 percent. TianChuang Scholarship in EECS of Peking University(天创奖学金)
-
 2013.09 - 2017.06  Bachelor of IOT Engineering, Southwest Jiaotong University
-
-- Rank：top 2 percent，National Scholarship × 2，The First Prize Scholarship × 3，Provincial Outstanding Graduate.
 
 ## Links
 
