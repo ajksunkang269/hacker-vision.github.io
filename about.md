@@ -20,6 +20,7 @@ Github：[https://github.com/Hacker-vision](https://github.com/Hacker-vision)
 
 CSDN blog：[http://blog.csdn.net/u012717411](http://blog.csdn.net/u012717411)
 
+Email: ajksunkang@pku.edu.cn
 
 ## 关于本站
 
