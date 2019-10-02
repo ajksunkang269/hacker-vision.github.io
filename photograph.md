@@ -6,6 +6,10 @@ comments: false
 author_footer: false
 ---
 
+
+![新中关华灯初上](/images/20190902-01.jpg)
+
+
 <table>
     <tr>
         <td><center><img src="/images/20190902-01.jpg" >新中关华灯初上</center></td>
